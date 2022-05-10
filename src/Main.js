@@ -80,22 +80,30 @@ const Main = () => {
             <p className="mb-4 font-medium leading-relaxed text-gray-500">
               Full Stack Web Developer
             </p>
-            <div className="flex justify-center hidden">
+            <a className="flex justify-center" href="#contact">
               <button className="text-white font-semibold bg-gray-900 border-0 py-2 px-6 focus:outline-none cursor-pointer hover:bg-sky-600 rounded-full text-lg">
                 Hire Me
               </button>
-            </div>
+            </a>
           </div>
         </div>
       </div>
 
       <div className="container mx-auto flex flex-wrap justify-center items-center pb-8">
-        <span className="mr-6 text-3xl text-gray-700 hover:text-gray-800 cursor-pointer">
-          <FiGithub />
-        </span>
-        <span className="mr-6 text-3xl text-gray-700 hover:text-gray-800 cursor-pointer">
-          <FiInstagram />
-        </span>
+        <a href="https://github.com/rohanphulkar" className="mx-5" passHref="">
+          <span className="mr-6 text-3xl text-gray-700 hover:text-gray-800 cursor-pointer">
+            <FiGithub />
+          </span>
+        </a>
+        <a
+          href="https://www.instagram.com/_rohanphulkar/"
+          className="mx-5"
+          passHref=""
+        >
+          <span className="mr-6 text-3xl text-gray-700 hover:text-gray-800 cursor-pointer">
+            <FiInstagram />
+          </span>
+        </a>
       </div>
       <div className="container mx-auto text-xl font-semibold hidden">
         <button className="bg-gray-900 flex justify-center items-center py-3 px-4 rounded-lg text-white mx-auto ">
@@ -168,7 +176,7 @@ const Main = () => {
           })}
         </div>
       </div>
-      <div className="py-12">
+      <div className="py-12" id="contact">
         <div className="container p-4 mx-auto text-center mt-10 mb-7">
           <h2 className="text-3xl font-bold">Contact</h2>
         </div>
