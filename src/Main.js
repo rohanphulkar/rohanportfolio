@@ -80,7 +80,7 @@ const Main = () => {
             <p className="mb-4 font-medium leading-relaxed text-gray-500">
               Full Stack Web Developer
             </p>
-            <div className="flex justify-center">
+            <div className="flex justify-center hidden">
               <button className="text-white font-semibold bg-gray-900 border-0 py-2 px-6 focus:outline-none cursor-pointer hover:bg-sky-600 rounded-full text-lg">
                 Hire Me
               </button>
@@ -97,7 +97,7 @@ const Main = () => {
           <FiInstagram />
         </span>
       </div>
-      <div className="container mx-auto text-xl font-semibold">
+      <div className="container mx-auto text-xl font-semibold hidden">
         <button className="bg-gray-900 flex justify-center items-center py-3 px-4 rounded-lg text-white mx-auto ">
           Download CV{" "}
           <span className="text-3xl cursor-pointer">
