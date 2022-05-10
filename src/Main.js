@@ -18,6 +18,7 @@ import {
 } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
+import { Link } from "react-scroll";
 const Main = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -80,11 +81,17 @@ const Main = () => {
             <p className="mb-4 font-medium leading-relaxed text-gray-500">
               Full Stack Web Developer
             </p>
-            <a className="flex justify-center" href="#contact">
+            <Link
+              smooth={true}
+              to="contact"
+              duration={1000}
+              className="flex justify-center"
+              href="#contact"
+            >
               <button className="text-white font-semibold bg-gray-900 border-0 py-2 px-6 focus:outline-none cursor-pointer hover:bg-gray-800 rounded-full text-lg">
                 Hire Me
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
