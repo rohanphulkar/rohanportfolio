@@ -34,7 +34,7 @@ const Main = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch(`https://rohanbackend.herokuapp.com/contact`, {
+    fetch(`${process.env.REACT_APP_BACKEND_URL}`, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -81,7 +81,7 @@ const Main = () => {
               Full Stack Web Developer
             </p>
             <a className="flex justify-center" href="#contact">
-              <button className="text-white font-semibold bg-gray-900 border-0 py-2 px-6 focus:outline-none cursor-pointer hover:bg-sky-600 rounded-full text-lg">
+              <button className="text-white font-semibold bg-gray-900 border-0 py-2 px-6 focus:outline-none cursor-pointer hover:bg-gray-800 rounded-full text-lg">
                 Hire Me
               </button>
             </a>
