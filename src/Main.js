@@ -112,14 +112,7 @@ const Main = () => {
           </span>
         </a>
       </div>
-      <div className="container mx-auto text-xl font-semibold hidden">
-        <button className="bg-gray-900 flex justify-center items-center py-3 px-4 rounded-lg text-white mx-auto ">
-          Download CV{" "}
-          <span className="text-3xl cursor-pointer">
-            <HiDownload />
-          </span>
-        </button>
-      </div>
+      
       <div className="container p-4 mx-auto text-center mt-10 mb-7">
         <h2 className="text-3xl font-bold">Skills</h2>
       </div>
