@@ -157,7 +157,9 @@ const Main = () => {
         <div className="flex flex-wrap justify-center md:justify-around items-center">
           {projectsAPI.map((project) => {
             return (
-              <div
+              <a
+                href={project.preview}
+                passHref
                 className="max-w-xs rounded-md shadow-md my-3"
                 key={project.id}
               >
@@ -171,7 +173,7 @@ const Main = () => {
                     <h2 className="text-xl font-semibold ">{project.name}</h2>
                   </div>
                 </div>
-              </div>
+              </a>
             );
           })}
         </div>
